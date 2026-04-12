@@ -1,0 +1,907 @@
+2026-04-05 09:23:48.461 [INFO ] [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.2.Final
+2026-04-05 09:23:48.528 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:23:48.529 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:23:48.531 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:23:48.572 [INFO ] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-05 09:23:48.572 [INFO ] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-05 09:23:49.985 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:23:50.046 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:23:50.797 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:23:50.808 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:23:50.810 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:23:50.810 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:23:50.850 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:23:50.850 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2277 ms
+2026-04-05 09:23:51.111 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:23:51.164 [INFO ] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-05 09:23:51.195 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:23:51.457 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:23:51.483 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-05 09:23:51.718 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f30f695
+2026-04-05 09:23:51.719 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-05 09:23:51.800 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:23:52.700 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:23:53.036 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:23:53.378 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:23:53.530 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a205b609-06b7-4865-896e-48d2f741eeda
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:23:53.983 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:23:54.428 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:23:54.477 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:23:54.495 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:23:54.504 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 6.525 seconds (process running for 15.2)
+2026-04-05 09:34:23.953 [INFO ] [http-nio-4000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-05 09:34:23.964 [INFO ] [http-nio-4000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-05 09:34:23.975 [INFO ] [http-nio-4000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2026-04-05 09:34:33.026 [INFO ] [http-nio-4000-exec-6] com.devflow.auth.AuthService             : User logged in: ganidu@gmail.com
+2026-04-05 09:39:53.920 [ERROR] [http-nio-4000-exec-4] c.d.exception.GlobalExceptionHandler     : Unhandled exception: 
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.devflow.users.dto.CreateUserDto` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{"email":"saamp@gmail.com","name":"Ganidu Gunasekara","password":"12345678","confirm_password":"12345678","company_id":1,"company_name":"Company 1","type":"DEVELOPER"}')
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:409)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:357)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:204)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:176)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at com.devflow.auth.JwtFilter.doFilterInternal(JwtFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.devflow.users.dto.CreateUserDto` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{"email":"saamp@gmail.com","name":"Ganidu Gunasekara","password":"12345678","confirm_password":"12345678","company_id":1,"company_name":"Company 1","type":"DEVELOPER"}')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1754)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1379)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromString(StdDeserializer.java:311)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString(BeanDeserializerBase.java:1592)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:197)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2131)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1501)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:398)
+	... 138 common frames omitted
+2026-04-05 09:39:54.080 [WARN ] [http-nio-4000-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.devflow.users.dto.CreateUserDto` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{"email":"saamp@gmail.com","name":"Ganidu Gunasekara","password":"12345678","confirm_password":"12345678","company_id":1,"company_name":"Company 1","type":"DEVELOPER"}')]
+2026-04-05 09:47:33.955 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 5 deletions, 0 modifications)
+2026-04-05 09:47:34.081 [INFO ] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:47:34.101 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:47:34.153 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:47:34.159 [INFO ] [Thread-5] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:47:34.237 [INFO ] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:47:34.284 [INFO ] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-05 09:47:34.302 [INFO ] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-05 09:47:34.836 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:47:34.836 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:47:34.836 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:47:36.217 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:47:36.238 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:47:36.496 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:47:36.498 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:47:36.498 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:47:36.498 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:47:36.519 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:47:36.519 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1680 ms
+2026-04-05 09:47:36.674 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:47:36.677 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:47:36.695 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:47:36.696 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-04-05 09:47:36.790 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@e7f0ac7
+2026-04-05 09:47:36.791 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-04-05 09:47:36.817 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:47:36.954 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:47:37.188 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:47:37.294 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:47:37.374 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e770f18f-e7d5-4c26-a4cd-079084270caf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:47:37.597 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:47:37.864 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:47:37.881 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:47:37.885 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:47:37.899 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 3.194 seconds (process running for 1438.595)
+2026-04-05 09:47:37.905 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:48:11.616 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2026-04-05 09:48:11.645 [INFO ] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:48:11.645 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:48:11.696 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:48:11.696 [INFO ] [Thread-7] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:48:11.718 [INFO ] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:48:11.730 [INFO ] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-04-05 09:48:11.742 [INFO ] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-04-05 09:48:11.982 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:48:11.982 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:48:11.982 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:48:12.981 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:48:13.026 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:48:13.760 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:48:13.760 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:48:13.760 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:48:13.760 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:48:13.808 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:48:13.808 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1826 ms
+2026-04-05 09:48:14.094 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:48:14.111 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:48:14.127 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:48:14.127 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-04-05 09:48:14.234 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@37125d36
+2026-04-05 09:48:14.234 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-04-05 09:48:14.243 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:48:14.415 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:48:14.614 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:48:14.775 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:48:14.802 [WARN ] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\My projects\SpringBoot Projects\devflow\build\classes\java\main\com\devflow\auth\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService' defined in file [D:\My projects\SpringBoot Projects\devflow\build\classes\java\main\com\devflow\auth\AuthService.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'usersService': Lookup method resolution failed
+2026-04-05 09:48:14.802 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:48:14.802 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-04-05 09:48:14.808 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-04-05 09:48:14.809 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-05 09:48:14.811 [INFO ] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-05 09:48:14.854 [ERROR] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\My projects\SpringBoot Projects\devflow\build\classes\java\main\com\devflow\auth\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authService' defined in file [D:\My projects\SpringBoot Projects\devflow\build\classes\java\main\com\devflow\auth\AuthService.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'usersService': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.devflow.DevflowApplication.main(DevflowApplication.java:9)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authService' defined in file [D:\My projects\SpringBoot Projects\devflow\build\classes\java\main\com\devflow\auth\AuthService.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'usersService': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'usersService': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1215)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 37 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.devflow.users.UsersService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@16b977e5]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 50 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/devflow/users/dto/CreateUserDto
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 52 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.devflow.users.dto.CreateUserDto
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 56 common frames omitted
+2026-04-05 09:48:16.362 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:48:16.362 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:48:16.362 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:48:16.876 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:48:16.909 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:48:17.202 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:48:17.212 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:48:17.212 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:48:17.212 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:48:17.427 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:48:17.441 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1077 ms
+2026-04-05 09:48:17.859 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:48:17.859 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:48:17.978 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:48:17.979 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-04-05 09:48:18.111 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@495c87f0
+2026-04-05 09:48:18.111 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-04-05 09:48:18.142 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:48:18.331 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:48:18.596 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:48:18.774 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:48:19.005 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fc64fe29-9ad5-47be-b373-ade7dac7e6b4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:48:19.529 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:48:20.040 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:48:20.087 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:48:20.095 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:48:20.107 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 3.795 seconds (process running for 1480.803)
+2026-04-05 09:48:20.110 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:50:37.804 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 5 deletions, 0 modifications)
+2026-04-05 09:50:37.806 [INFO ] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:50:37.808 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:37.823 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:50:37.823 [INFO ] [Thread-11] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:37.825 [INFO ] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:50:37.826 [INFO ] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-04-05 09:50:37.831 [INFO ] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-04-05 09:50:37.910 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:50:37.910 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:50:37.910 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:50:38.131 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:50:38.142 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:50:38.284 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:50:38.289 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:38.289 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:50:38.290 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:50:38.305 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:50:38.305 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 394 ms
+2026-04-05 09:50:38.424 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:50:38.426 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:50:38.439 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:50:38.440 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-04-05 09:50:38.515 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@5127eae
+2026-04-05 09:50:38.515 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-04-05 09:50:38.526 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:50:38.654 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:50:38.875 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:50:38.997 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:50:39.119 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0aa90236-9353-4f5f-9f64-7e50c12feb0a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:50:39.397 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:50:39.835 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:50:39.872 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:39.878 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:50:39.888 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 2.002 seconds (process running for 1620.585)
+2026-04-05 09:50:39.892 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:50:41.268 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2026-04-05 09:50:41.270 [INFO ] [Thread-18] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:50:41.271 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:41.288 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:50:41.288 [INFO ] [Thread-18] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:41.291 [INFO ] [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:50:41.292 [INFO ] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-04-05 09:50:41.295 [INFO ] [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-04-05 09:50:41.399 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:50:41.399 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:50:41.399 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:50:41.705 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:50:41.716 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:50:41.824 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:50:41.825 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:41.825 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:50:41.825 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:50:41.845 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:50:41.845 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 444 ms
+2026-04-05 09:50:41.944 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:50:41.945 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:50:41.953 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:50:41.953 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-04-05 09:50:42.002 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@2a552fc2
+2026-04-05 09:50:42.002 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-04-05 09:50:42.010 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:50:42.076 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:50:42.251 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:50:42.340 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:50:42.466 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ddfea5a3-e629-44d8-a58d-bb98b5f8042e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:50:42.654 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:50:42.846 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:50:42.863 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:50:42.867 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:50:42.871 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 1.515 seconds (process running for 1623.567)
+2026-04-05 09:50:42.872 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:51:15.173 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2026-04-05 09:51:15.175 [INFO ] [Thread-22] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:51:15.176 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:15.192 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:51:15.193 [INFO ] [Thread-22] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:15.195 [INFO ] [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:51:15.196 [INFO ] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-04-05 09:51:15.201 [INFO ] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-04-05 09:51:15.288 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:51:15.289 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:51:15.289 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:51:15.513 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:51:15.525 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:51:15.642 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:51:15.643 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:15.643 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:51:15.643 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:51:15.663 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:51:15.663 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 373 ms
+2026-04-05 09:51:15.771 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:51:15.774 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:51:15.783 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:51:15.784 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-04-05 09:51:15.830 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@7719b5b6
+2026-04-05 09:51:15.830 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-04-05 09:51:15.842 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:51:15.915 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:51:16.142 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:51:16.228 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:51:16.371 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 44572d1b-b29a-4630-8691-33b2e358f1bc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:51:16.622 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:51:16.907 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:51:16.921 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:16.924 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:51:16.929 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 1.67 seconds (process running for 1657.625)
+2026-04-05 09:51:16.930 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:51:18.339 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2026-04-05 09:51:18.341 [INFO ] [Thread-26] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:51:18.341 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:18.356 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:51:18.357 [INFO ] [Thread-26] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:18.359 [INFO ] [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:51:18.360 [INFO ] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-04-05 09:51:18.361 [INFO ] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-04-05 09:51:18.430 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:51:18.430 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:51:18.430 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:51:18.625 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:51:18.636 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:51:18.734 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:51:18.734 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:18.734 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:51:18.734 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:51:18.750 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:51:18.750 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 319 ms
+2026-04-05 09:51:18.854 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:51:18.856 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:51:18.861 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:51:18.861 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-04-05 09:51:18.907 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@38e2705d
+2026-04-05 09:51:18.907 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-04-05 09:51:18.914 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:51:18.971 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:51:19.126 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:51:19.191 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:51:19.262 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 90756254-bf33-41ff-b633-dcdbbb65458e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:51:19.406 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:51:19.590 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:51:19.602 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:51:19.605 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:51:19.610 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 1.197 seconds (process running for 1660.306)
+2026-04-05 09:51:19.611 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:52:49.120 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2026-04-05 09:52:49.122 [INFO ] [Thread-30] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:52:49.123 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:49.140 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:52:49.140 [INFO ] [Thread-30] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:49.143 [INFO ] [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:52:49.144 [INFO ] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-04-05 09:52:49.146 [INFO ] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-04-05 09:52:49.228 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:52:49.228 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:52:49.228 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:52:49.484 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:52:49.496 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:52:49.628 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:52:49.629 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:49.629 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:52:49.629 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:52:49.645 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:52:49.645 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 415 ms
+2026-04-05 09:52:49.784 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:52:49.786 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:52:49.795 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:52:49.795 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-04-05 09:52:49.861 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@700e86c
+2026-04-05 09:52:49.861 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-04-05 09:52:49.871 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:52:49.926 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:52:50.127 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:52:50.188 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:52:50.260 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8489e7a9-6997-41f1-a497-4f6810532bcb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:52:50.480 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:52:50.781 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:52:50.796 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:50.799 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:52:50.804 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 1.597 seconds (process running for 1751.501)
+2026-04-05 09:52:50.806 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:52:52.222 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2026-04-05 09:52:52.230 [INFO ] [Thread-34] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:52:52.233 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:52.279 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:52:52.281 [INFO ] [Thread-34] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:52.289 [INFO ] [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:52:52.292 [INFO ] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-04-05 09:52:52.297 [INFO ] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-04-05 09:52:52.430 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:52:52.430 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:52:52.430 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:52:52.672 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:52:52.685 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:52:52.811 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:52:52.812 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:52.812 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:52:52.812 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:52:52.828 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:52:52.828 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 397 ms
+2026-04-05 09:52:52.955 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:52:52.957 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:52:52.964 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:52:52.965 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-04-05 09:52:53.013 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@56993331
+2026-04-05 09:52:53.013 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-04-05 09:52:53.022 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:52:53.081 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:52:53.266 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:52:53.339 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:52:53.416 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 23135c26-057a-472e-aad0-7220b48c9bf8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:52:53.609 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:52:53.809 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:52:53.823 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:53.826 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:52:53.830 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 1.422 seconds (process running for 1754.527)
+2026-04-05 09:52:53.832 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:52:57.289 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2026-04-05 09:52:57.289 [INFO ] [Thread-38] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:52:57.289 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:57.319 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:52:57.321 [INFO ] [Thread-38] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:57.325 [INFO ] [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:52:57.325 [INFO ] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-04-05 09:52:57.325 [INFO ] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2026-04-05 09:52:57.456 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 9384 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:52:57.456 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:52:57.456 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:52:57.683 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:52:57.696 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:52:58.045 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:52:58.046 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:58.047 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:52:58.047 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:52:58.078 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:52:58.078 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 621 ms
+2026-04-05 09:52:58.332 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:52:58.334 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:52:58.343 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:52:58.344 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-04-05 09:52:58.432 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@20a1f31e
+2026-04-05 09:52:58.433 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-04-05 09:52:58.446 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:52:58.604 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:52:58.770 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:52:58.836 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:52:58.899 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef99bf6d-e524-4da9-9510-fc8b2073af71
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:52:59.054 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:52:59.248 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:52:59.262 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:52:59.264 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:52:59.269 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 1.839 seconds (process running for 1759.965)
+2026-04-05 09:52:59.270 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:53:04.116 [INFO ] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:53:04.136 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:53:04.138 [INFO ] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:53:04.139 [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-04-05 09:53:04.142 [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-04-05 09:54:22.748 [INFO ] [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.2.Final
+2026-04-05 09:54:22.802 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 21316 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:54:22.802 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:54:22.803 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:54:22.844 [INFO ] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-05 09:54:22.844 [INFO ] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-05 09:54:23.758 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:54:23.817 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:54:24.585 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:54:24.596 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:24.597 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:54:24.598 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:54:24.645 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:54:24.646 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1801 ms
+2026-04-05 09:54:24.916 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:54:24.973 [INFO ] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-05 09:54:25.008 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:54:25.312 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:54:25.349 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-05 09:54:25.519 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b4d70e3
+2026-04-05 09:54:25.521 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-05 09:54:25.585 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:54:26.484 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:54:26.696 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:54:27.020 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:54:27.164 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3c1215b6-3c62-49ab-b4e9-e0e76ff4f0ca
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:54:27.638 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:54:28.109 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:54:28.168 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:28.187 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:54:28.196 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 5.888 seconds (process running for 6.58)
+2026-04-05 09:54:28.610 [INFO ] [RMI TCP Connection(2)-192.168.1.5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-05 09:54:28.611 [INFO ] [RMI TCP Connection(2)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-05 09:54:28.612 [INFO ] [RMI TCP Connection(2)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-05 09:54:33.655 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2026-04-05 09:54:33.655 [INFO ] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:54:33.655 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:33.925 [WARN ] [http-nio-4000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DuplicateKeyException: Email already exists]
+2026-04-05 09:54:33.950 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:54:33.950 [INFO ] [Thread-5] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:33.960 [INFO ] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:54:33.965 [INFO ] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-05 09:54:33.966 [INFO ] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-05 09:54:34.139 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 21316 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:54:34.139 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:54:34.139 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:54:34.799 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:54:34.869 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:54:35.263 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:54:35.263 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:35.263 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:54:35.263 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:54:35.311 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:54:35.311 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1172 ms
+2026-04-05 09:54:35.601 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:54:35.607 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:54:35.636 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:54:35.640 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-04-05 09:54:35.782 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3c72ee1c
+2026-04-05 09:54:35.782 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-04-05 09:54:35.830 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:54:36.055 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:54:36.255 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:54:36.477 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:54:36.773 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ba6afeac-c940-4643-afb0-929059f73b9a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:54:37.150 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:54:37.603 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:54:37.668 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:37.684 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:54:37.700 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 3.634 seconds (process running for 16.084)
+2026-04-05 09:54:37.700 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:54:39.109 [INFO ] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2026-04-05 09:54:39.111 [INFO ] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 09:54:39.114 [INFO ] [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:39.152 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 09:54:39.152 [INFO ] [Thread-7] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:39.168 [INFO ] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:54:39.168 [INFO ] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-04-05 09:54:39.168 [INFO ] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-04-05 09:54:39.280 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Starting DevflowApplication using Java 21.0.1 with PID 21316 (D:\My projects\SpringBoot Projects\devflow\build\classes\java\main started by MSI GF63 in D:\My projects\SpringBoot Projects\devflow)
+2026-04-05 09:54:39.280 [DEBUG] [restartedMain] com.devflow.DevflowApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-04-05 09:54:39.280 [INFO ] [restartedMain] com.devflow.DevflowApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-05 09:54:39.761 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-05 09:54:39.794 [INFO ] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2026-04-05 09:54:40.164 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4000 (http)
+2026-04-05 09:54:40.164 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:40.164 [INFO ] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-05 09:54:40.164 [INFO ] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-04-05 09:54:40.196 [INFO ] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-05 09:54:40.196 [INFO ] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 916 ms
+2026-04-05 09:54:40.436 [INFO ] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-05 09:54:40.436 [INFO ] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-05 09:54:40.452 [INFO ] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-05 09:54:40.452 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-04-05 09:54:40.596 [INFO ] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@26ba169c
+2026-04-05 09:54:40.596 [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-04-05 09:54:40.612 [INFO ] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 18.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-05 09:54:40.869 [INFO ] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-05 09:54:41.123 [INFO ] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 09:54:41.315 [DEBUG] [restartedMain] com.devflow.auth.JwtFilter               : Filter 'jwtFilter' configured for use
+2026-04-05 09:54:41.459 [WARN ] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f48e6d1c-65fa-43dc-be9d-3d3a5dcf87dc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-05 09:54:41.844 [INFO ] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-05 09:54:42.533 [INFO ] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-05 09:54:42.566 [INFO ] [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-4000"]
+2026-04-05 09:54:42.568 [INFO ] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4000 (http) with context path '/'
+2026-04-05 09:54:42.568 [INFO ] [restartedMain] com.devflow.DevflowApplication           : Started DevflowApplication in 3.336 seconds (process running for 20.965)
+2026-04-05 09:54:42.581 [INFO ] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-05 09:55:28.996 [INFO ] [http-nio-4000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-05 09:55:28.998 [INFO ] [http-nio-4000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-05 09:55:29.012 [INFO ] [http-nio-4000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2026-04-05 11:24:17.453 [INFO ] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-05 11:24:17.523 [INFO ] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-04-05 11:24:17.561 [INFO ] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-05 11:24:17.578 [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-04-05 11:24:17.585 [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
