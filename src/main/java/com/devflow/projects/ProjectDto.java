@@ -4,6 +4,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class ProjectDto {
 
@@ -12,4 +14,6 @@ public class ProjectDto {
 
     @NotNull
     private Long companyId;
+
+    private List<Long> users;
 }

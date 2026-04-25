@@ -1,6 +1,7 @@
 package com.devflow.users;
 
 import com.devflow.company.Company;
+import com.devflow.user_project.UserProject;
 import com.devflow.users.enums.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -8,6 +9,8 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -47,4 +50,7 @@ public class User {
     @UpdateTimestamp
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
+
+    @OneToMany(mappedBy = "user")
+    private List<UserProject> userProjects = new ArrayList<>();
 }

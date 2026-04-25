@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 @RestController
 @RequestMapping("/company")
 @RequiredArgsConstructor
@@ -15,8 +16,11 @@ public class CompanyController {
 
     private final CompanyService companyService;
 
+    private static final Logger log = LoggerFactory.getLogger(CompanyController.class);
     @PostMapping("/create")
-    public ResponseEntity<CompanyResponseDto> create(@Valid @RequestBody CompanyDto dto) {
+    public ResponseEntity<CompanyResponseDto> create(@RequestBody CompanyDto dto) {
+        log.info("DTO class: {}", dto.getClass().getName());
+        log.info("companyName: '{}'", dto.getCompanyName());
         return ResponseEntity.ok(companyService.create(dto));
     }
 

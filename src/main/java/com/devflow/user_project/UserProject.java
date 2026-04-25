@@ -1,34 +1,30 @@
-package com.devflow.projects;
+package com.devflow.user_project;
 
-import com.devflow.company.Company;
-import com.devflow.user_project.UserProject;
+import com.devflow.projects.Project;
+import com.devflow.users.User;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @Entity
-@Table(name = "projects")
-public class Project {
+@Table(name = "user_projects")
+public class UserProject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
-    private String name;
-
-    @Column
-    private String description;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "company_id", nullable = false)
-    private Company company;
+    @JoinColumn(name = "project_id", nullable = false)
+    private Project project;
 
     @Column(name = "is_deleted")
     private boolean isDeleted = false;
@@ -40,7 +36,4 @@ public class Project {
     @UpdateTimestamp
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
-
-    @OneToMany(mappedBy = "project")
-    private List<UserProject> userProjects = new ArrayList<>();
 }

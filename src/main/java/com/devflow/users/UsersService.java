@@ -43,7 +43,7 @@ public class UsersService {
 
     public Page<UserResponseDto> findAll(UserFilterRequest filters) {
         Pageable pageable = PageRequest.of(filters.page,filters.size);
-        return usersRepository.findAllUsers(filters.isShowDeleted(),filters.getKeyword(), pageable)
+        return usersRepository.findAllUsers(filters.isShowDeleted(),filters.getKeyword(), filters.getCompany_id(),pageable)
                 .map(UserResponseDto::from);
     }
 

@@ -8,4 +8,5 @@ public class UserFilterRequest {
     String keyword = null;
     int page = 0;
     int size = 100;
+    long company_id = 0;
 }

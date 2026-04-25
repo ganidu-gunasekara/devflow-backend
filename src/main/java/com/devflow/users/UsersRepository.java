@@ -13,13 +13,14 @@ import java.util.Optional;
 @Repository
 public interface UsersRepository extends JpaRepository<User, Long> {
     Optional<User> findByEmail(String email);
-
     @Query("SELECT u FROM User u LEFT JOIN FETCH u.company " +
             "WHERE u.isDeleted = :showDeleted " +
             "AND (:keyword IS NULL OR :keyword = '' OR LOWER(u.name) LIKE LOWER(CONCAT('%', :keyword, '%'))) " +
+            "AND (:companyId = 0 OR u.company.id = :companyId) " +
             "ORDER BY u.id ASC")
     Page<User> findAllUsers(@Param("showDeleted") boolean showDeleted,
                             @Param("keyword") String keyword,
+                            @Param("companyId") long companyId,
                             Pageable pageable);
     @Query("SELECT u from User as u LEFT JOIN fetch u.company where u.isDeleted =  false and u.id = :id")
     Optional<User> findUserById(@Param("id") Long id);

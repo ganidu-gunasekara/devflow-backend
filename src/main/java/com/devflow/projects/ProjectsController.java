@@ -21,13 +21,13 @@ public class ProjectsController {
     }
 
     @GetMapping("/get")
-    public ResponseEntity<List<ProjectResponseDto>> findAll() {
-        return ResponseEntity.ok(projectsService.findAll());
+    public ResponseEntity<List<ProjectResponseDto>> findAll(ProjectFilterRequest filters) {
+        return ResponseEntity.ok(projectsService.findAll(filters));
     }
 
     @GetMapping("/get/{id}")
-    public ResponseEntity<ProjectResponseDto> findOne(@PathVariable Long id) {
-        return projectsService.findOne(id)
+    public ResponseEntity<ProjectResponseDto> findOne(ProjectFilterRequest filters) {
+        return projectsService.findOne(filters)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
