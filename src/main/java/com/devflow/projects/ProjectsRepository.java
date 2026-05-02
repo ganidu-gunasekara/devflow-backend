@@ -30,4 +30,15 @@ public interface ProjectsRepository extends JpaRepository<Project, Long> {
             "AND (u.company.id = p.company.id OR u IS NULL) " +
             "AND (:id = 0 OR :id = p.id)")
     Optional<Project> findProject(@Param("id") Long id);
+
+    @Query("SELECT p FROM Project p LEFT JOIN FETCH p.company " +
+            "JOIN p.userProjects up " +
+            "WHERE p.isDeleted = :showDeleted " +
+            "AND up.user.id = :userId " +
+            "AND (:keyword IS NULL OR :keyword = '' OR LOWER(p.name) LIKE LOWER(CONCAT('%', :keyword, '%'))) " +
+            "AND (:id = 0 OR :id = p.id)")
+    List<Project> findProjectsByUserId(@Param("showDeleted") boolean showDeleted,
+                                       @Param("keyword") String keyword,
+                                       @Param("id") Long id,
+                                       @Param("userId") Long userId);
 }

@@ -5,6 +5,7 @@ import com.devflow.user_project.UserProject;
 import com.devflow.users.enums.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -15,6 +16,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "users")
+@ToString(exclude = "userProjects")
 public class User {
 
     @Id

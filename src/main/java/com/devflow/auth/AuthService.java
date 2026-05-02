@@ -46,7 +46,7 @@ public class AuthService {
                         "id", user.getId(),
                         "email", user.getEmail(),
                         "name", user.getName(),
-                        "type", user.getType()
+                        "user_type", user.getType()
                 ),
                 "accessToken", accessToken,
                 "refreshToken", refreshToken

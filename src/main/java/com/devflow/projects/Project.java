@@ -27,7 +27,7 @@ public class Project {
     private String description;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "company_id", nullable = false)
+    @JoinColumn(name = "company_id", nullable = true)
     private Company company;
 
     @Column(name = "is_deleted")
