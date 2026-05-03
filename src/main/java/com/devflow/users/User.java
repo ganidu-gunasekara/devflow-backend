@@ -1,6 +1,7 @@
 package com.devflow.users;
 
 import com.devflow.company.Company;
+import com.devflow.projects.Project;
 import com.devflow.user_project.UserProject;
 import com.devflow.users.enums.UserType;
 import jakarta.persistence.*;
@@ -16,7 +17,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "users")
-@ToString(exclude = "userProjects")
+@ToString(exclude = {"userProjects", "selectedProject", "company"})
 public class User {
 
     @Id
@@ -38,6 +39,10 @@ public class User {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "company_id")
     private Company company;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "selected_project_id")
+    private Project selectedProject;
 
     @Column(name = "refresh_token")
     private String refreshToken;

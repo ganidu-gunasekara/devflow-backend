@@ -38,12 +38,12 @@ public class AuthController {
 
         return ResponseEntity.ok(Map.of(
                 "user", tokens.get("user"),
-                "accessToken", tokens.get("accessToken")
+                "access_token", tokens.get("accessToken")
         ));
     }
 
     @PostMapping("/refresh")
-    public ResponseEntity<Map<String, String>> refresh(HttpServletRequest request,
+    public ResponseEntity<AuthResponseDto> refresh(HttpServletRequest request,
                                                        HttpServletResponse response) {
         String refreshToken = null;
 
@@ -59,16 +59,17 @@ public class AuthController {
             return ResponseEntity.status(401).build();
         }
 
-        Map<String, String> tokens = authService.refreshTokens(refreshToken);
+        AuthResponseDto authResponseDto = authService.refreshTokens(refreshToken);
 
-        Cookie cookie = new Cookie("refresh_token", tokens.get("refreshToken"));
+        Cookie cookie = new Cookie("refresh_token", authResponseDto.getRefreshToken());
         cookie.setHttpOnly(true);
         cookie.setSecure("production".equals(appEnv));
         cookie.setPath("/");
         cookie.setMaxAge(7 * 24 * 60 * 60);
         response.addCookie(cookie);
 
-        return ResponseEntity.ok(Map.of("accessToken", tokens.get("accessToken")));
+        authResponseDto.setRefreshToken(null);
+        return ResponseEntity.ok(authResponseDto);
     }
 
     @PostMapping("/logout")

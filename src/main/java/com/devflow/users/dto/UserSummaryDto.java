@@ -3,36 +3,25 @@ package com.devflow.users.dto;
 import com.devflow.users.User;
 import com.devflow.users.enums.UserType;
 import lombok.Data;
-import java.time.LocalDateTime;
 
 @Data
-public class UserResponseDto {
+public class UserSummaryDto {
     private Long id;
     private String email;
     private String name;
     private UserType type;
     private Long companyId;
     private String companyName;
-    private Long selectedProjectId;
-    private String selectedProjectName;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 
-    public static UserResponseDto from(User user) {
-        UserResponseDto dto = new UserResponseDto();
+    public static UserSummaryDto from(User user) {
+        UserSummaryDto dto = new UserSummaryDto();
         dto.setId(user.getId());
         dto.setEmail(user.getEmail());
         dto.setName(user.getName());
         dto.setType(user.getType());
-        dto.setCreatedAt(user.getCreatedAt());
-        dto.setUpdatedAt(user.getUpdatedAt());
         if (user.getCompany() != null) {
             dto.setCompanyId(user.getCompany().getId());
             dto.setCompanyName(user.getCompany().getCompanyName());
-        }
-        if (user.getSelectedProject() != null) {
-            dto.setSelectedProjectId(user.getSelectedProject().getId());
-            dto.setSelectedProjectName(user.getSelectedProject().getName());
         }
         return dto;
     }

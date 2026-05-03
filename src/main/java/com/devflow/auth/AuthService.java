@@ -4,6 +4,7 @@ import com.devflow.exception.InvalidCredentialsException;
 import com.devflow.users.User;
 import com.devflow.users.UsersRepository;
 import com.devflow.users.UsersService;
+import com.devflow.users.dto.UserResponseDto;
 import com.devflow.utils.HashUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -53,7 +54,7 @@ public class AuthService {
         );
     }
 
-    public Map<String, String> refreshTokens(String refreshToken) {
+    public AuthResponseDto refreshTokens(String refreshToken) {
         Long userId;
         try {
             userId = jwtUtil.extractUserIdFromRefresh(refreshToken);
@@ -61,7 +62,7 @@ public class AuthService {
             throw new InvalidCredentialsException("Access Denied");
         }
 
-        User user = usersRepository.findById(userId)
+        User user = usersRepository.findUserById(userId)
                 .orElseThrow(() -> new InvalidCredentialsException("Access Denied"));
 
         if (user.getRefreshToken() == null) {
@@ -77,8 +78,11 @@ public class AuthService {
         String newRefreshToken = jwtUtil.generateRefreshToken(user.getId(), user.getEmail());
 
         usersService.updateRefreshToken(user.getId(), newRefreshToken);
-
-        return Map.of("accessToken", newAccessToken, "refreshToken", newRefreshToken);
+        AuthResponseDto authResponseDto = new AuthResponseDto();
+        authResponseDto.setRefreshToken(newRefreshToken);
+        authResponseDto.setAccessToken(newAccessToken);
+        authResponseDto.setUser(UserResponseDto.from(user));
+        return authResponseDto;
     }
 
     public Map<String, String> logout(Long userId) {

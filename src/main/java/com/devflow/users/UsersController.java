@@ -3,6 +3,7 @@ package com.devflow.users;
 import com.devflow.users.dto.CreateUserDto;
 import com.devflow.users.dto.UpdateUserDto;
 import com.devflow.users.dto.UserResponseDto;
+import com.devflow.users.dto.UserSummaryDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +28,7 @@ public class UsersController {
     }
 
     @GetMapping("/get")
-    public ResponseEntity<Page<UserResponseDto>> findAll(UserFilterRequest filters) {
+    public ResponseEntity<Page<UserSummaryDto>> findAll(UserFilterRequest filters) {
         return ResponseEntity.ok(usersService.findAll(filters));
     }
 

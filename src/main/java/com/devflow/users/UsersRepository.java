@@ -22,6 +22,6 @@ public interface UsersRepository extends JpaRepository<User, Long> {
                             @Param("keyword") String keyword,
                             @Param("companyId") long companyId,
                             Pageable pageable);
-    @Query("SELECT u from User as u LEFT JOIN fetch u.company where u.isDeleted =  false and u.id = :id")
+    @Query("SELECT u from User as u LEFT JOIN fetch u.company LEFT JOIN fetch u.selectedProject where u.isDeleted =  false and u.id = :id")
     Optional<User> findUserById(@Param("id") Long id);
 }

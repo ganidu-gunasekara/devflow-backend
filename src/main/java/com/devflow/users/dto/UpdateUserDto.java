@@ -12,4 +12,5 @@ public class UpdateUserDto {
     private String refreshToken;
     private Boolean isDeleted;
     private Long companyId;
+    private Long selectedProjectId;
 }
